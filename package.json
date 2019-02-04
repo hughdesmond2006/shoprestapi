@@ -4,11 +4,12 @@
   "description": "api and client for a simple shop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hughdesmond1989/shoprestapi.git"
+    "url": "git+https://github.com/hughdesmond2006/shoprestapi.git"
   },
   "keywords": [
     "node",
@@ -23,6 +24,10 @@
   },
   "homepage": "https://github.com/hughdesmond1989/shoprestapi#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
