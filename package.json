@@ -1,0 +1,28 @@
+{
+  "name": "shoprestapi",
+  "version": "1.0.0",
+  "description": "api and client for a simple shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughdesmond1989/shoprestapi.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "api",
+    "shop"
+  ],
+  "author": "Hugh Desmond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hughdesmond1989/shoprestapi/issues"
+  },
+  "homepage": "https://github.com/hughdesmond1989/shoprestapi#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
