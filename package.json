@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/hughdesmond1989/shoprestapi#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "mongoose": "^5.4.9",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
