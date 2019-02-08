@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
+const userRoutes = require('./api/routes/users');
 
 mongoose.connect(
     'mongodb://hugh:' +
@@ -18,6 +19,7 @@ mongoose.connect(
 mongoose.Promise = global.Promise;
 
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));    //makes uploads publicly available and preserves the uploads path in the URL
 app.use(bparser.urlencoded({extended: false}));
 app.use(bparser.json());
 
@@ -37,8 +39,9 @@ app.use((req, res, next) => {
 //routes that handle requests
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
+app.use('/users', userRoutes);
 
-//if you react this line then nothing before could handle the request so its an error
+//if you reach this line then nothing before could handle the request so its an error
 app.use((req, res, next) => {
     const error = new Error('Not Found!');
     error.status = 404;
